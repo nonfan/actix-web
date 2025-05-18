@@ -40,7 +40,7 @@ export default defineConfig({
       {icon: 'github', link: 'https://github.com/nonfan/actix-web'}
     ],
     editLink: {
-      pattern: 'https://github.com/nonfan/diesel-demo/edit/docs/docs/:path',
+      pattern: 'https://github.com/nonfan/actix-web/edit/docs/docs/:path',
       text: "在 GitHub 上编辑此页面"
     },
     footer: {
