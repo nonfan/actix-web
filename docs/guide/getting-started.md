@@ -69,4 +69,4 @@ async fn main() -> std::io::Result<()> {
 就是这样！使用 `cargo run` 编译并运行程序。`#[actix_web::main]` 宏在 actix 运行时内执行 async main 函数。现在，您可以转到 `http://127.0.0.1:8080/` 或您定义的任何其他路由来查看结果。
 
 > [!TIP] 导航
-> [前往 GitHub 查看完整示例代码](https://github.com/nonfan/diesel-demo/tree/docs/examples/ch01_hello_world)
+> [前往 GitHub 查看完整示例代码](https://github.com/nonfan/actix-web/tree/docs/examples/ch01_hello_world)
