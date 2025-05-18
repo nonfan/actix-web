@@ -7,7 +7,10 @@ export default defineConfig({
   description: "Actix Web 是一个功能强大、实用且速度极快的 Rust Web 框架",
   head: [['link', {rel: 'icon', href: '/actix-web/logo.png'}]],
   themeConfig: {
-    logo: "/logo.png",
+    logo: {
+      light: "/logo.png",
+      dark: "/logo-dark.png",
+    },
     nav: [
       {text: '指南', link: '/guide/whatis'},
       {text: '官方文档', link: 'https://actix.rs/docs'}
@@ -18,6 +21,13 @@ export default defineConfig({
         items: [
           {text: '什么是 Actix Web', link: '/guide/whatis'},
           {text: '快速开始', link: '/guide/getting-started'},
+        ]
+      },
+      {
+        text: "基础用法",
+        collapsed: false,
+        items: [
+          {text: 'App 应用程序', link: '/basics/application.md'},
         ]
       }
     ],
