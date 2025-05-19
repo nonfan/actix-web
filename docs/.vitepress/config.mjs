@@ -6,6 +6,7 @@ export default defineConfig({
   title: "Actix Web 中文文档",
   description: "Actix Web 是一个功能强大、实用且速度极快的 Rust Web 框架",
   head: [['link', {rel: 'icon', href: '/actix-web/logo.png'}]],
+  cleanUrls: true,
   themeConfig: {
     logo: {
       light: "/logo.png",
@@ -27,7 +28,23 @@ export default defineConfig({
         text: "基础用法",
         collapsed: false,
         items: [
-          {text: 'App 应用程序', link: '/basics/application.md'},
+          {text: 'App 应用程序', link: '/basics/application'},
+          {text: 'HTTP 服务器', link: '/basics/server'},
+          {text: '提取器', link: '/basics/extractors'},
+          {text: '请求处理函数', link: '/basics/handlers'},
+        ]
+      },
+      {
+        text: "进阶",
+        collapsed: false,
+        items: [
+          {text: '错误', link: '/advanced/errors'},
+          {text: 'URL 分发', link: '/advanced/url_dispatch'},
+          {text: 'Requests', link: '/advanced/requests'},
+          {text: 'Responses', link: '/advanced/responses'},
+          {text: '测试', link: '/advanced/testing'},
+          {text: '中间件', link: '/advanced/middleware'},
+          {text: '静态文件', link: '/advanced/static_files'},
         ]
       }
     ],
