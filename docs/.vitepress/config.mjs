@@ -38,7 +38,7 @@ export default defineConfig({
         text: "进阶",
         collapsed: false,
         items: [
-          {text: '错误', link: '/advanced/errors'},
+          {text: '错误处理', link: '/advanced/errors'},
           {text: 'URL 分发', link: '/advanced/url_dispatch'},
           {text: 'Requests', link: '/advanced/requests'},
           {text: 'Responses', link: '/advanced/responses'},
