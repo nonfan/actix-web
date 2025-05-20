@@ -14,6 +14,7 @@ export default defineConfig({
     },
     nav: [
       {text: '指南', link: '/guide/whatis'},
+      {text: 'API参考', link: 'https://docs.rs/actix-web/latest/actix_web/'},
       {text: '官方文档', link: 'https://actix.rs/docs'}
     ],
     sidebar: [
@@ -39,12 +40,28 @@ export default defineConfig({
         collapsed: false,
         items: [
           {text: '错误处理', link: '/advanced/errors'},
-          {text: 'URL 分发', link: '/advanced/url_dispatch'},
-          {text: 'Requests', link: '/advanced/requests'},
-          {text: 'Responses', link: '/advanced/responses'},
+          {text: 'URL 路由', link: '/advanced/url_dispatch'},
+          {text: 'Requests 请求体', link: '/advanced/requests'},
+          {text: 'Response 响应', link: '/advanced/responses'},
           {text: '测试', link: '/advanced/testing'},
           {text: '中间件', link: '/advanced/middleware'},
           {text: '静态文件', link: '/advanced/static_files'},
+        ]
+      },
+      {
+        text: "协议",
+        collapsed: false,
+        items: [
+          {text: 'WebSockets', link: '/protocols/websockets'},
+          {text: 'HTTP/2', link: '/protocols/http2'},
+        ]
+      },
+      {
+        text: "扩展",
+        collapsed: false,
+        items: [
+          {text: '自动加载', link: '/extensions/auto-reloading'},
+          {text: '数据库', link: '/extensions/database'},
         ]
       }
     ],
