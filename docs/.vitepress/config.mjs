@@ -2,10 +2,10 @@ import {defineConfig} from 'vitepress'
 
 export default defineConfig({
   lang: "zh",
-  base: "/actix-web",
+  base: "/actix-web-docs",
   title: "Actix Web 中文文档",
   description: "Actix Web 是一个功能强大、实用且速度极快的 Rust Web 框架",
-  head: [['link', {rel: 'icon', href: '/actix-web/logo.png'}]],
+  head: [['link', {rel: 'icon', href: '/actix-web-docs/logo.png'}]],
   cleanUrls: true,
   themeConfig: {
     logo: {
@@ -14,7 +14,7 @@ export default defineConfig({
     },
     nav: [
       {text: '指南', link: '/guide/whatis'},
-      {text: 'API参考', link: 'https://docs.rs/actix-web/latest/actix_web/'},
+      {text: 'API参考', link: 'https://docs.rs/actix-web-docs/latest/actix_web/'},
       {text: '官方文档', link: 'https://actix.rs/docs'}
     ],
     sidebar: [
@@ -81,10 +81,10 @@ export default defineConfig({
       provider: 'local',
     },
     socialLinks: [
-      {icon: 'github', link: 'https://github.com/nonfan/actix-web'}
+      {icon: 'github', link: 'https://github.com/nonfan/actix-web-docs'}
     ],
     editLink: {
-      pattern: 'https://github.com/nonfan/actix-web/edit/docs/docs/:path',
+      pattern: 'https://github.com/nonfan/actix-web-docs/edit/docs/docs/:path',
       text: "在 GitHub 上编辑此页面"
     },
     footer: {
